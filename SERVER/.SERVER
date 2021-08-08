@@ -1,1 +1,6 @@
 #!/bin/bash
+echo "{GREEN}"
+echo "\n\n CHANGELOGS : \n"
+echo "                 DEVICE ID CHANGE ERROR FIXED"
+echo "                 KEYMAP ALL VERSIONS FIXED   "
+echo "                 BYPASS UPDATED             \n "
