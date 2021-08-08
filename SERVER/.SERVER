@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "{GREEN}"
+echo "\n${SOFTBLUE}\n"
 echo "\n\n CHANGELOGS : \n"
 echo "                 DEVICE ID CHANGE ERROR FIXED"
 echo "                 KEYMAP ALL VERSIONS FIXED   "
