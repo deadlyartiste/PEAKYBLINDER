@@ -1,7 +1,13 @@
 #!/bin/bash
+# ------------------------------------------COLORS----------------------------------------------------#
+
+SOFTBLUE='\e[1;36m'
+
+# ------------------------------------------COLORS----------------------------------------------------#
+
 echo "\n${SOFTBLUE}\n"
 echo "\n\n CHANGELOGS : \n"
-echo "                 DEVICE ID CHANGE ERROR FIXED"
-echo "                 KEYMAP ALL VERSIONS FIXED   "
-echo "                 BYPASS UPDATED             \n "
-sleep 2
+echo "                1) DEVICE ID CHANGE ERROR FIXED"
+echo "                2) KEYMAP ALL VERSIONS FIXED   "
+echo "                3) BYPASS UPDATED             \n "
+sleep 3
