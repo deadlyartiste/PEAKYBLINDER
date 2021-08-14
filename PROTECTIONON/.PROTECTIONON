@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# ------------------------------------------COLORS----------------------------------------------------#
+
+GREEN='\e[1;32m'
+SOFTBLUE='\e[1;36m'
+
+#-----------------------------------------------------------------------------------------------------#
+echo "${GREEN}\n"
+echo "    \n\n\n\n\n\n    ACTIVATING........ \n"
+sleep 1
+iptables=/system/bin/iptables
+
+iptables -I OUTPUT -p tcp --dport 3013 -j DROP
+iptables -I OUTPUT -p tcp --dport 8080 -j DROP
+iptables -I OUTPUT -p tcp --dport 8081 -j DROP
+iptables -I OUTPUT -p tcp --dport 8082 -j DROP
+iptables -I OUTPUT -p tcp --dport 8086 -j DROP
+iptables -I OUTPUT -p tcp --dport 10001 -j DROP
+iptables -I OUTPUT -p tcp --dport 10002 -j DROP
+iptables -I OUTPUT -p tcp --dport 10012 -j DROP
+iptables -I OUTPUT -p tcp --dport 15692 -j DROP
+iptables -I OUTPUT -p tcp --dport 17000 -j DROP
+iptables -I OUTPUT -p tcp --dport 17500 -j DROP
+iptables -I OUTPUT -p tcp --dport 18081 -j DROP
+iptables -I OUTPUT -p tcp --dport 20001 -j DROP
+iptables -I OUTPUT -p tcp --dport 20002 -j DROP
+iptables -I OUTPUT -p tcp --dport 20371 -j DROP
+iptables -I OUTPUT -p tcp --dport 35000 -j DROP
+iptables -I OUTPUT -p tcp --dport 49514 -j DROP
+iptables -I OUTPUT -p tcp --dport 65535 -j DROP
+iptables -I OUTPUT -p tcp --dport http-alt -j DROP
+iptables -I OUTPUT -p tcp --dport https -j DROP
+
+iptables -I INPUT -p tcp --dport 3013 -j DROP
+iptables -I INPUT -p tcp --dport 8080 -j DROP
+iptables -I INPUT -p tcp --dport 8081 -j DROP
+iptables -I INPUT -p tcp --dport 8082 -j DROP
+iptables -I INPUT -p tcp --dport 8086 -j DROP
+iptables -I INPUT -p tcp --dport 10001 -j DROP
+iptables -I INPUT -p tcp --dport 10002 -j DROP
+iptables -I INPUT -p tcp --dport 10012 -j DROP
+iptables -I INPUT -p tcp --dport 15692 -j DROP
+iptables -I INPUT -p tcp --dport 17000 -j DROP
+iptables -I INPUT -p tcp --dport 17500 -j DROP
+iptables -I INPUT -p tcp --dport 18081 -j DROP
+iptables -I INPUT -p tcp --dport 20001 -j DROP
+iptables -I INPUT -p tcp --dport 20002 -j DROP
+iptables -I INPUT -p tcp --dport 20371 -j DROP
+iptables -I INPUT -p tcp --dport 35000 -j DROP
+iptables -I INPUT -p tcp --dport 49514 -j DROP
+iptables -I INPUT -p tcp --dport 65535 -j DROP
+iptables -I INPUT -p tcp --dport http-alt -j DROP
+iptables -I INPUT -p tcp --dport https -j DROP
+
+clear
+echo "${SOFTBLUE}\n"
+echo "    \n\n\n\n\n\n    ACTIVATED \n"
+sleep 1
