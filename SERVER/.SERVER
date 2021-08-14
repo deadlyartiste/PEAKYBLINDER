@@ -5,8 +5,8 @@ SOFTBLUE='\e[1;36m'
 
 # ------------------------------------------COLORS----------------------------------------------------#
 
-echo "\n${SOFTBLUE}\n"
-echo "\n\n CHANGELOGS : \n"
+echo "${SOFTBLUE}"
+echo "\n CHANGELOGS : \n"
 echo "  1) DEVICE ID CHANGE ERROR FIXED"
 echo "  2) KEYMAP ALL VERSIONS FIXED   "
 echo "  3) BYPASS UPDATED              "
