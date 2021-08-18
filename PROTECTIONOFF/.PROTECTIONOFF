@@ -22,6 +22,11 @@ iptables -F
  
 # Delete all Iptables Chains #
 iptables -X
+iptables -F
+iptables -X
+iptables -Z
+iptables --flush
+iptables -L
 
 clear
 echo "${SOFTBLUE}\n"
